@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Design Portfolio</title>
+
+    <style>
+
+        body {
+            font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"sans-serif;
+            background-color: #f5f5f5;
+            color: #642829;
+            margin: 40px;
+		    background-image: url("Background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+}
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        figure {
+            width: 200px;
+            margin: 0;
+
+            background-color: white;
+            padding: 15px;
+
+            border-radius: 5px;
+        }
+
+        figure img {
+            width: 200px;
+            height: 300px;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+        figure img:hover {
+            opacity: 0.8;
+        }
+
+        figcaption {
+            margin-top: 12px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        figcaption strong {
+            font-size: 16px;
+			
+        } 
+		
+		figure img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+
+    transition: transform 0.2s ease;
+}
+
+figure img:hover {
+    transform: scale(1.08);
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <h1>My Design Portfolio</h1>
+
+    <p class="intro">
+        A collection of my graphic design work throughout my classes.
+    </p>
+
+    <div class="portfolio">
+
+        <figure>
+
+            <a href="Design1_highres.jpg" target="_blank">
+
+                <img
+                    src="Design1_thumbnail.jpg"
+                    alt="Design 1"
+                >
+
+            </a>
+
+            <figcaption>
+
+                <strong>100 Dollar Bill Redesign</strong>
+
+                <br><br>
+
+                A currency redesign project for GRC250. The design updates the current 100 dollar bill into a more modernized visual. It showcases a historial event making it more meaningful.
+
+            </figcaption>
+
+        </figure>
+
+        <figure>
+
+            <a href="Design2_highres.jpg" target="_blank">
+
+                <img
+                    src="Design2_thumbnail.jpg"
+                    alt="Design 2"
+                >
+
+            </a>
+
+            <figcaption>
+                <strong>Online Tea Shop Website</strong>
+
+                <br><br>
+
+                A website design for a made up tea company for GRC366. The design focuses on visual heirarchy ensuring the viewer can easily navigate and locate all the key information.
+
+            </figcaption>
+
+        </figure>
+        <figure>
+
+            <a href="Design3_highres.jpg" target="_blank">
+                <img
+                    src="Design3_thumbnail.jpg"
+                    alt="Design 3"
+                >
+
+            </a>
+
+            <figcaption>
+
+                <strong>Artist Tour Poster</strong>
+
+                <br><br>
+
+               A tour poster design for GRC250. The poster captures the artist's aesthetic through the use of texture and typography. 
+
+            </figcaption>
+
+        </figure>
+
+
+    </div>
+
+</body>
+
+</html>
