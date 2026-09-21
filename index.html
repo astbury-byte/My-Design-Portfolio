@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,81 +11,107 @@
 
         body {
             font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"sans-serif;
-            background-color: #f5f5f5;
-            color: #642829;
-            margin: 40px;
-		    background-image: url("Background.jpg");
+            color: #5a2525;
+            margin: 0;
+            padding: 40px;
+
+            /* CHANGE THIS to your background image filename */
+            background-image: url("Background.jpg");
+
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-}
+            min-height: 100vh;
+        }
 
         h1 {
             text-align: center;
+            font-size: 40px;
             margin-bottom: 10px;
         }
 
         .intro {
             text-align: center;
+            font-size: 18px;
             margin-bottom: 40px;
         }
 
-        .portfolio {
+        .portfolio-box {
+
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 30px;
+            align-items: flex-start;
+            gap: 35px;
 
-            max-width: 1000px;
-            margin: auto;
+            width: 85%;
+            max-width: 1200px;
+            min-height: 500px;
+
+            margin: 0 auto;
+            padding: 40px;
+
+            background-color: rgba(255, 255, 255, 0.85);
+
+            border: 1px solid #cccccc;
+
+            box-sizing: border-box;
         }
+
 
         figure {
-            width: 200px;
+            width: 250px;
             margin: 0;
-
-            background-color: white;
-            padding: 15px;
-
-            border-radius: 5px;
         }
 
+
         figure img {
-            width: 200px;
-            height: 300px;
+            width: 250px;
+            height: 350px;
 
             object-fit: cover;
 
             display: block;
+
+            transition: transform 0.2s ease,
+                        box-shadow 0.2s ease;
         }
 
         figure img:hover {
-            opacity: 0.8;
+
+            transform: scale(1.06);
+
+            box-shadow: 0px 6px 15px
+                        rgba(0, 0, 0, 0.3);
         }
 
+
         figcaption {
-            margin-top: 12px;
-            font-size: 14px;
+            margin-top: 15px;
+
+            font-size: 16px;
             line-height: 1.5;
         }
 
+
         figcaption strong {
-            font-size: 16px;
-			
-        } 
-		
-		figure img {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
+            font-size: 18px;
+        }
 
-    transition: transform 0.2s ease;
-}
 
-figure img:hover {
-    transform: scale(1.08);
-}
+        @media (max-width: 700px) {
+
+            body {
+                padding: 20px;
+            }
+
+            .portfolio-box {
+                width: 100%;
+                padding: 25px;
+            }
+
+        }
 
     </style>
 
@@ -93,13 +120,16 @@ figure img:hover {
 
 <body>
 
+
     <h1>My Design Portfolio</h1>
 
     <p class="intro">
         A collection of my graphic design work throughout my classes.
     </p>
 
-    <div class="portfolio">
+
+    <div class="portfolio-box">
+
 
         <figure>
 
@@ -107,18 +137,23 @@ figure img:hover {
 
                 <img
                     src="Design1_thumbnail.jpg"
-                    alt="Design 1"
+                    alt="100 Dollar Bill Redesign"
                 >
 
             </a>
 
+
             <figcaption>
 
-                <strong>100 Dollar Bill Redesign</strong>
+                <strong>
+                    100 Dollar Bill Redesign
+                </strong>
 
                 <br><br>
 
-                A currency redesign project for GRC250. The design updates the current 100 dollar bill into a more modernized visual. It showcases a historial event making it more meaningful.
+                A currency redesign project for GRC250.
+                The design updates the current 100 dollar
+                bill into a more modernized visual.
 
             </figcaption>
 
@@ -126,49 +161,73 @@ figure img:hover {
 
         <figure>
 
-            <a href="Design2_highres.jpg" target="_blank">
+            <a href="Design2_highres.jpg"
+               target="_blank">
 
                 <img
                     src="Design2_thumbnail.jpg"
-                    alt="Design 2"
+                    alt="Online Tea Shop Website"
                 >
 
             </a>
 
+
             <figcaption>
-                <strong>Online Tea Shop Website</strong>
+
+                <strong>
+                    Online Tea Shop Website
+                </strong>
 
                 <br><br>
 
-                A website design for a made up tea company for GRC366. The design focuses on visual heirarchy ensuring the viewer can easily navigate and locate all the key information.
+                A website design for GRC366 of a made-up tea company.
+                The design focuses on visual hierarchy,
+                navigation, and making information easy
+                for users to find.
 
             </figcaption>
 
         </figure>
+
+
         <figure>
 
-            <a href="Design3_highres.jpg" target="_blank">
+            <a href="Design3_highres.jpg"
+               target="_blank">
+
                 <img
                     src="Design3_thumbnail.jpg"
-                    alt="Design 3"
+                    alt="Artist Tour Poster"
                 >
 
             </a>
 
+
             <figcaption>
 
-                <strong>Artist Tour Poster</strong>
+                <strong>
+                    Artist Tour Poster
+                </strong>
 
                 <br><br>
 
-               A tour poster design for GRC250. The poster captures the artist's aesthetic through the use of texture and typography. 
+                A tour poster design for GRC250.
+                The poster captures the artist's aesthetic
+                through the use of texture and typography.
 
             </figcaption>
 
         </figure>
+
+
+
+        <!-- ========================================
+             ADD NEW PROJECTS ABOVE THIS LINE
+             ======================================== -->
 
 
     </div>
+
 
 </body>
 
