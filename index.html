@@ -106,7 +106,44 @@
                 padding: 25px;
             }
 
-        }
+        }.project-table {
+    width: 75%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.project-table h2 {
+    text-align: center;
+    color: #0D9BA7;
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    border: 1px solid #0D9BA7;
+    text-align: left;
+}
+
+th {
+    background-color: #0D9BA7;
+    color: white;
+}
+
+td {
+    background-color: #ffffff;
+    color: #5a2525;
+}
+
+tbody tr:hover td {
+    background-color: #e8f5f5;
+}
 
     </style>
 
@@ -216,7 +253,47 @@
 
 
     </div>
+<section class="project-table">
+    <h2>Portfolio Project Details</h2>
 
+    <table>
+        <thead>
+            <tr>
+                <th>Project</th>
+                <th>Course</th>
+                <th>Type</th>
+                <th>File Format</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><strong>100 Dollar Bill Redesign</strong></td>
+                <td>GRC250</td>
+                <td>Currency Design</td>
+                <td>PDF / PNG</td>
+                <td>2026</td>
+            </tr>
+
+            <tr>
+                <td><strong>Online Tea Shop Website</strong></td>
+                <td>GRC366</td>
+                <td>Web Design</td>
+                <td>HTML / CSS</td>
+                <td>2026</td>
+            </tr>
+
+            <tr>
+                <td><strong>Artist Tour Poster</strong></td>
+                <td>GRC250</td>
+                <td>Poster Design</td>
+                <td>PDF / JPG</td>
+                <td>2026</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
 
 </body>
 
