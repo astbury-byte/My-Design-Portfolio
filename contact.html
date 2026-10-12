@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | My Portfolio</title>
+
+    <style>
+        body {
+            font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"sans-serif;
+            margin: 0;
+            padding: 0;
+			color: #5a2525;
+			background-image: url("Background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #222222;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-container {
+            max-width: 650px;
+            margin: 60px auto;
+            padding: 30px;
+        }
+
+        .contact-container h1 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .contact-container > p {
+            text-align: center;
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: inherit;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            background-color: #0D9BA7;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+            .contact-container {
+                margin: 30px auto;
+                padding: 20px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+        }
+/* Home Button */
+
+.home-section {
+    text-align: center;
+    margin: 20px auto 30px;
+}
+
+.home-button {
+    display: inline-block;
+    background-color: #0D9BA7;
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"sans-serif;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;
+}
+
+.home-button:hover {
+    background-color: #5a2525;
+    transform: scale(1.05);
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        
+<body>
+
+<!-- Home Button -->
+<div class="home-section">
+    <a href="index.html" class="home-button">
+        Home
+    </a>
+</div>
+
+
+    <main class="contact-container">
+
+        <h1>Get in Touch</h1>
+
+        <p>
+            Have a question or want to collaborate?
+            Feel free to send me a message!
+        </p>
+
+        <form>
+
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your First & Last Name"
+            >
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+            >
+
+            <label for="subject">Subject</label>
+            <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Enter the subject"
+            >
+
+            <label for="message">Message</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Write your message here"
+            ></textarea>
+
+            <button type="button">Submit</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Maegan's Design Portfolio</p>
+    </footer>
+
+</body>
+</html>
